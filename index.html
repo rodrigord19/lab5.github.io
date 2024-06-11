@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand" href="#">Mi Portafolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contáctame</a></li>
+        </ul>
+    </div>  
+</nav>
+
+<section id="about" class="container mt-5">
+    <h2>Acerca de mí</h2>
+    <p>Soy <b>Jose Rodrigo Cari Almiron</b>. Estudiante de Ciencia de la Computación en la Universidad Nacional de San Agustín.</p>
+    <img src="./img/cs-logo.jpg" alt="Logo de CS" width="240px">
+</section>
+
+<section id="skills" class="container mt-5">
+    <h2>Habilidades</h2>
+    <div class="contenedor-skill">
+        <picture>
+            <img src="./img/html-5.png" alt="icono HTML">
+            <img src="./img/css-3.png" alt="icono CSS">
+            <img src="./img/java-script.png" alt="icono JavaScript">
+            <img src="./img/bootstrap.png" alt="icono de framework de CSS Bootstrap">
+            <img src="./img/php.png" alt="icono de PHP">
+            <img src="./img/git.png" alt="icono control de versiones Git">
+        </picture>
+    </div>
+</section>
+
+<section id="portfolio" class="container mt-5">
+    <h2>Portafolio</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+            <img src="img/p1.png" class="card-img-top" alt="Proyecto 1" style="margin: 15px auto 0 auto; max-width: 320px;">
+            <div class="card-body">
+                <h5 class="card-title">Formulario Javascript</h5>
+                <p class="card-text">Formulario que muestra el nombre completo, el último dígito del DNI y la edad según los datos ingresados utilizando javascript.</p>
+                <a href="https://github.com/rodrigord19/lab4.github.io" class="btn btn-primary">Ver código</a>
+                <a href="https://rodrigord19.github.io/lab4.github.io/" class="btn btn-secondary">Ver sitio</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="img/p2.png" class="card-img-top" alt="Proyecto 2" style="margin: 15px auto 0 auto; max-width: 320px;">
+            <div class="card-body">
+                <h5 class="card-title">To-Do List</h5>
+                <p class="card-text">Web que permite crear una lista de tareas o actividades pendientes que una persona necesita completar.</p>
+                <a href="https://github.com/rodrigord19/todolist.github.io" class="btn btn-primary">Ver código</a>
+                <a href="https://rodrigord19.github.io/todolist.github.io/" class="btn btn-secondary">Ver sitio</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="img/p3.png" class="card-img-top" alt="Proyecto 3" style="margin: 15px auto 0 auto; max-width: 320px;">
+            <div class="card-body">
+                <h5 class="card-title">TicTacToe</h5>
+                <p class="card-text">Cuadrícula de 3x3 donde los jugadores se turnan para colocar sus símbolos (X o O) con el objetivo de alinear tres de sus símbolos en fila, columna o diagonal para ganar.</p>
+                <a href="https://github.com/rodrigord19/TicTacToe.github.io" class="btn btn-primary">Ver código</a>
+                <a href="https://rodrigord19.github.io/TicTacToe.github.io/" class="btn btn-secondary">Ver sitio</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container mt-5">
+    <h2>Contáctame</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+<footer class="container mt-5">
+    <p class="text-center">Copyright © 2024</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
